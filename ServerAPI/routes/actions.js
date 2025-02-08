@@ -93,8 +93,6 @@ router.get('/', authMiddleware, actionController.getActions);
  *               category:
  *                 type: string
  *                 enum: ["Reciclagem", "Energia", "Água", "Mobilidade"]
- *               points:
- *                 type: number
  *     responses:
  *       200:
  *         description: Ação atualizada com sucesso
