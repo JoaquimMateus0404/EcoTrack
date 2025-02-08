@@ -3,10 +3,19 @@ const connectDB = require('./config/db');
 const authRoutes = require('./routes/auth');
 const actionRoutes = require('./routes/actions');
 const swaggerSetup = require('./swagger/swagger');
+const path = require('path');
 const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
+
+// Servir arquivos estáticos da pasta 'public'
+app.use(express.static(path.join(__dirname, '../Public')));
+
+// Rota para servir a página inicial
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '../Public/index.html'));
+});
 
 // Conectar ao Banco de Dados
 connectDB();
