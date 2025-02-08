@@ -140,8 +140,8 @@ Content-Type: application/json
 Este projeto está licenciado sob a licença MIT. Consulte o arquivo `LICENSE` para mais detalhes.
 
 ## 📞 Contato
-- **Nome**: [Duarte Gauss]
-- **Email**: [joaquimmateus0404@gmail.com]
+- **Nome**: Duarte Gauss
+- **Email**: joaquimmateus0404@gmail.com
 - **GitHub**: [https://github.com/joaquimmateus0404](https://github.com/joaquimmateus0404)
 
 ## 🌐 Link da Aplicação Online

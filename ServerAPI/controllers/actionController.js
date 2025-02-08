@@ -1,9 +1,20 @@
 const Action = require('../models/Action');
 
 exports.createAction = async (req, res) => {
-  const { title, description, category, points } = req.body;
-  console.log("Usuário autenticado:", req.user); // Verificar usuário autenticado
+  const { title, description, category } = req.body;
+
   try {
+    // Definir os pontos automaticamente com base na categoria
+    const pointsByCategory = {
+      "Reciclagem": 10,
+      "Energia": 15,
+      "Água": 12,
+      "Mobilidade": 20
+    };
+
+    const points = pointsByCategory[category] || 5; // Caso a categoria não esteja definida, atribui 5 pontos
+
+    // Criar a ação com os pontos gerados automaticamente
     const newAction = new Action({
       title,
       description,
@@ -11,13 +22,19 @@ exports.createAction = async (req, res) => {
       points,
       userId: req.user.id,
     });
+
     const action = await newAction.save();
+
+    // Atualizar os pontos do usuário
+    await User.findByIdAndUpdate(req.user.id, { $inc: { points: points } });
+
     res.json(action);
   } catch (err) {
-    console.error("Erro no createAction:", err);  // <== Adicionado para ver o erro
+    console.error("Erro no createAction:", err);
     res.status(500).send('Server error');
   }
 };
+
 
 
 

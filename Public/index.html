@@ -40,7 +40,7 @@
                     <option value="Água">Água</option>
                     <option value="Mobilidade">Mobilidade</option>
                 </select>
-                <input type="number" id="actionPoints" class="form-control mb-2" placeholder="Pontos" required min="1">
+
                 <button type="submit" class="btn btn-success w-100">Criar Ação</button>
             </form>
             <button class="btn btn-danger mt-3" onclick="logout()">Logout</button>
@@ -88,9 +88,8 @@
             const title = document.getElementById("title").value;
             const description = document.getElementById("description").value;
             const category = document.getElementById("actionCategory").value;
-            const points = document.getElementById("actionPoints").value;
             
-            const actionData = { title, description, category, points };
+            const actionData = { title, description, category};
 
             if (editingActionId) {
                 // Atualizar ação existente

@@ -40,9 +40,6 @@ const actionController = require('../controllers/actionController');
  *                 type: string
  *                 enum: ["Reciclagem", "Energia", "Água", "Mobilidade"]
  *                 example: "Reciclagem"
- *               points:
- *                 type: number
- *                 example: 10
  *     responses:
  *       201:
  *         description: Ação criada com sucesso
