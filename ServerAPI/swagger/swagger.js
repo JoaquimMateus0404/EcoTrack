@@ -14,7 +14,7 @@ const swaggerOptions = {
     },
     servers: [
       {
-        url: 'http://localhost:5000',
+        url: 'https://ecotrack-eqz8.onrender.com',
         description: 'Servidor local',
       },
     ],
