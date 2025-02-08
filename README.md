@@ -40,7 +40,7 @@ EcoTrack é uma API RESTful que incentiva ações sustentáveis relacionadas ao 
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/EcoTrack.git
+git clone https://github.com/joaquimmateus0404/EcoTrack.git
 cd EcoTrack
 ```
 
@@ -142,10 +142,10 @@ Este projeto está licenciado sob a licença MIT. Consulte o arquivo `LICENSE` p
 ## 📞 Contato
 - **Nome**: [Duarte Gauss]
 - **Email**: [joaquimmateus0404@gmail.com]
-- **GitHub**: [https://github.com/joaquimmateus04](https://github.com/joaquimmateus04)
+- **GitHub**: [https://github.com/joaquimmateus0404](https://github.com/joaquimmateus0404)
 
 ## 🌐 Link da Aplicação Online
-- **API**: [https://ecotrack-api.exemplo.com](https://ecotrack-api.exemplo.com)
-- **Swagger**: [https://ecotrack-api.exemplo.com/api-docs](https://ecotrack-api.exemplo.com/api-docs)
-- **Frontend**: [https://ecotrack.exemplo.com](https://ecotrack.exemplo.com)
+- **API**: [https://ecotrack-eqz8.onrender.com/api-docs/](https://ecotrack-eqz8.onrender.com/api-docs/)
+- **Swagger**: [https://ecotrack-eqz8.onrender.com/api-docs/](https://ecotrack-eqz8.onrender.com/api-docs/)
+- **Frontend**: [https://ecotrack-eqz8.onrender.com/](https://ecotrack-eqz8.onrender.com)
 
