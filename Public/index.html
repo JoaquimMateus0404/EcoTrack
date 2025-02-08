@@ -137,7 +137,7 @@ li.innerHTML = `
         <small class="text-muted">Description: ${action.description}</small>
     </div>
     <div>
-        <button class="btn btn-outline-warning btn-sm me-2" onclick="editAction('${action._id}', '${action.title}', '${action.description}', '${action.category}', '${action.points}')">
+        <button class="btn btn-outline-warning btn-sm me-2" onclick="editAction('${action._id}', '${action.title}', '${action.description}', '${action.category}')">
             <i class="fas fa-edit"></i> Editar
         </button>
         <button class="btn btn-outline-danger btn-sm" onclick="deleteAction('${action._id}')">
@@ -153,7 +153,6 @@ list.appendChild(li);
             document.getElementById("title").value = title;
             document.getElementById("description").value = description;
             document.getElementById("actionCategory").value = category;
-            document.getElementById("actionPoints").value = points;
             editingActionId = id;
         }
 
